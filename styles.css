@@ -1,20 +1,129 @@
-#logoBar{
+#logoBar {
   width: 30vw;
   height: 100vh;
 }
-#siteLogo{
+#siteLogo {
   width: 100%;
 }
+
 body {
   display: flex;
-}
-#staffGallery{
-  width: 70vw;
-  display: inherit;
 
+  background-color: #ffefe8;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  --link-color: #4394b2;
+  /* --link-color: #7f0990, #004B48, #177E89, #69995D, #090C9B; */
+  /* border-top: 2px solid gray; */
 }
-.galleryImage{
+
+nav {
+  display: block;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  font-size: 1.5em;
+}
+
+.inner-text {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  --link-color: #4394b2;
+  text-align: justify;
+}
+
+.title {
+  padding-top: 5px;
+  font-size: 2.5em;
+  color: rgb(44, 44, 43);
+  font-weight: 200;
+  margin: 0px;
+}
+
+.page-heading {
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.menu {
+  width: 75%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.main-column {
+  max-width: 1000px;
+  width: 95%;
+  margin: auto;
+  align-items: center;
+  min-width: 625px;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+}
+
+.intro {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  padding-bottom: 8px;
+  /* width: 75%; */
+  margin: auto;
+}
+
+.subheading {
+  font-size: 2em;
+  font-weight: 400;
+  padding-top: 32px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-top: 32px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-top: 32px;
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image img {
   width: 100%;
   height: auto;
-  height: 300px;
+  border: 2px black solid;
 }

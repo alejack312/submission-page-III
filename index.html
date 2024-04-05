@@ -8,24 +8,141 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
+    <title>Development</title>
     <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" /> 
   </head>
 
-  <!-- page content goes into <body> -->
+ <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
+    <div class="main-column">
+      <div class="content">
+        <header class="page-heading">
+          <h1 class="title">Development</h1>
+
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#part-one">Part 1: Competitive Analysis</a>
+              </li>
+              <li><a href="#part-two">Part 2: Set-up </a></li>
+               <li><a href="#part-three">Part 3: Functionality </a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="intro">
+          <div class="self-descrip">
+            <h2 class="subheading" id="part-one">
+              Part 1: Competitive Analysis
+            </h2>
+
+            <h3> 
+              Select at least 3 different websites with a favoriting 
+              function:
+            </h3>
+
+            <p class="inner-text">
+              <a href="https://www.ebay.com">eBay</a>: 
+              Has favoriting functions that allow users to save products 
+              they are interested in. The website uses a shopping cart as an 
+              aggregator to keep track of selected items.
+              <br> <br>
+              <a href="https://www.tiktok.com/explore">Tiktok</a>: Has a “Save” feature that allows users to save posts for 
+              later viewing. The platform incorporates aggregators through a 
+              collection of the saved items.
+              <br> <br>
+              <a href="https://simplify.jobs/dashboard">Simplify Jobs</a>: Has a favoriting or bookmarking option for users to
+              save appealing jobs. The website incorporates aggregators through 
+              a “Saved Jobs” section on the home page.
+            </p>
+
+            <div class="image">
+              <img
+                src="assets\Opera Snapshot_2024-04-04_221927_docs.google.com.png"
+                alt="Photo of the competitive analysis chart."
+              />
+            </div>
+
+            <p class="inner-text">
+              eBay excels in offering expanded dropdown menus, adaptive layout, 
+              visual organization, and collaborative filtering. These features 
+              contribute to a user-friendly experience by providing easy access 
+              to a wide range of options, adapting to different devices, 
+              presenting information in an organized manner, and recommending 
+              relevant products based on user behavior. TikTok lacks expanded 
+              dropdown menus and adaptive layout but compensates with 
+              customizable filters (in the form of hashtags), visual 
+              organization, and collaborative filtering. While it may not have 
+              extensive menu options or a fully responsive design, TikTok allows 
+              users to personalize their content preferences, presents videos in 
+              an engaging layout, and uses collaborative filtering for tailored 
+              recommendations. Simplify Jobs offers expanded dropdown menus, 
+              adaptive layout, and collaborative filtering but lacks 
+              customizable filters and good visual organization. While it 
+              provides options in a structured manner, personalized 
+              recommendations, and adjusts to different screen sizes, the 
+              absence of customizable filters and visual cues for organization 
+              may impact user engagement and satisfaction with the feature.
+              <br><br>
+              When implementing a list-based interface, I would focus on 
+              creating a user-friendly and visually appealing design that 
+              enhances usability and engagement. The features and designs I 
+              would like to implement based on the successful factors identified 
+              and the improvements needed are an adaptive layout, customizable 
+              filters (keyword search), visual organization, simplistic and 
+              intuitive navigation,  and with enough time, collaborative 
+              filtering.
+            </p>
+
+        <div class="proj-list" id="part-two">
+          <h2 class="subheading">Part 2: Set-up</h2>
+
+          <a href="research-match.vercel.app">
+            Deployed Site
+          </a>
+        </div>
+        <div class="proj-list" id="part-three">
+          <h2 class="subheading">Part 3: Functionality</h2>
+
+          <p class="inner-text">
+            The intention of this app is to help users find researchers that 
+            match their interests. The app will have a list of researchers that 
+            users can filter and sort based on their research areas. The app 
+            will also have an aggregator that will show favorited researchers 
+            that match the user's interests.
+            <br><br>
+            The app includes a way to filter researcher cards by research area. 
+            The user can select a research area from a dropdown menu and the 
+            researcher cards will update to show only the researchers that match 
+            the selected research area.
+            <br><br>
+            The app includes a way to filter researcher cards by keywords in the 
+            researcher's description. The user can enter a keyword in the search 
+            bar and the researcher cards will update to show only the 
+            researchers that have the keyword in their description.
+            <br><br>
+            The app includes a way to sort researcher cards by alphabetical 
+            order of the research area. They can be filtered in ascending and 
+            descending order.
+            <br><br>
+            A button at the top of the page allows the user to reset the filters 
+            and sorts.
+            <br><br>
+            Users can add researcher cards to their list of favorites. The 
+            aggregator at the right side of the page will update to show the 
+            researchers in the list of favorites. Once added to the list of 
+            favorites, each researcher has a corresponding button that allows 
+            the user to remove the researcher from the list of favorites.
+            <br><br>
+            Filter & sort are compatible and work in combination with each 
+            other. The user can filter by research area and then sort the 
+            filtered researchers by alphabetical order of the research area. 
+            The user can also filter by keyword and search for descriptions 
+            that match the keyword.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 
